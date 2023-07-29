@@ -1,0 +1,131 @@
+:root {
+    --primary-dark: #333;
+    --primary-light: #ededed;
+    --secondary-light: #fefefe;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, 
+body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--primary-light);
+    color: var(--primary-dark);
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+
+/* MAIN */
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 30px;
+    align-items: center;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    border: 1px solid var(--primary-dark);
+    border-radius: 5px;
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+.buttons button.active {
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+  }
+
+.buttons button:hover {
+  transform: scale(1.05);
+}
+
+.range {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 70%;
+}
+
+.range div.size-value {
+    font-size: 25px;
+}
+
+.range input[type='range'] {
+    width: 100%;
+    cursor: pointer;
+    -webkit-appearance: none;
+    background-color: var(--primary-light);
+}
+.range input[type='range']::-webkit-slider-runnable-track {
+    height: 10px;
+    border: 1px solid var(--primary-dark);
+    border-radius: 25px;
+    background: var(--secondary-light);
+  }
+  
+  .range input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 25px;
+    margin-top: -8px;
+    background: var(--primary-dark);
+  }
+
+.grid {
+    flex-grow: 1;
+    width: 80%;
+    background-color: var(--secondary-light);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    min-width: 300px;
+    min-height: 300px;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    font-size: 15px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--primary-dark);
+}
+
