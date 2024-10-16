@@ -11,7 +11,7 @@ Designed using CSS Flex & Variables
 
 ## Requirements
 
-- Theree buttons for Pen, Eraser & clear.
+- Three buttons for Pen, Eraser & clear.
 - Input (type: 'range') to increase & decrease the size of boxes.
 - A board where users can play & draw.
 
